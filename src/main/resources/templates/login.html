@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Login</title>
+</head>
+
+<body>
+<h1>Login</h1>
+
+<form class="user" method="post" th:action="@{/}" >
+      <div class="form-group">
+      	<a>Username:</a>
+         <input type="text" class="form-control form-control-user"placeholder="usename...">
+      </div>
+      
+      </br>
+      
+      <div class="form-group">
+      	 <a>Password:</a>
+         <input type="password" class="form-control form-control-user" placeholder="password...">
+      </div>
+      
+      </br>
+      
+      
+      <button type="submit" class="btn btn-primary btn-user btn-block">
+              <a  th:href = "@{/}" class="button">Đăng Nhập</a>
+     </button>
+     <a href="#">Quên mật khẩu?</a>
+</form>
+
+
+
+</body>
+</html>
